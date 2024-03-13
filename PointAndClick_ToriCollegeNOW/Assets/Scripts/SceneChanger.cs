@@ -34,7 +34,6 @@ public class SceneChanger : MonoBehaviour
         {
             EndSceneControls(); //call EndSceneControls()
         }
-
     }
 
     public void StartSceneControls()
@@ -47,7 +46,11 @@ public class SceneChanger : MonoBehaviour
 
     public void MainSceneControls()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) //if Return/Enter is pressed...(You can change this key code!)
+        if (Input.GetKeyDown(KeyCode.S)) //if Return/Enter is pressed...(You can change this key code!)
+        {
+            SceneManager.LoadScene("StartScene"); //load the EndScene
+        }
+        else if (Input.GetKeyDown(KeyCode.E)) //if Return/Enter is pressed...(You can change this key code!)
         {
             SceneManager.LoadScene("EndScene"); //load the EndScene
         }
@@ -55,9 +58,14 @@ public class SceneChanger : MonoBehaviour
 
     public void EndSceneControls()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) //if Return/Enter is pressed...(You can change this key code!)
+        if (Input.GetKeyDown(KeyCode.Space)) //if Return/Enter is pressed...(You can change this key code!)
         {
-            SceneManager.LoadScene("MainScene"); //load the StartScene
+            SceneManager.LoadScene("StartScene"); //load the StartScene
         }
+    }
+
+    public void MoveToScene(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID); //load the MainScene
     }
 }

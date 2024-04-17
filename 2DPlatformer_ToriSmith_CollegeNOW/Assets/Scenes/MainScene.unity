@@ -624,7 +624,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.55, y: -2.01, z: -10}
+  m_LocalPosition: {x: -19.55, y: -1.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1144,7 +1144,7 @@ Transform:
   m_GameObject: {fileID: 1498464899}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.55, y: -2.01, z: -10}
+  m_LocalPosition: {x: -19.55, y: -1.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1382,18 +1382,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.07041359, y: -0.03670758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6189728, y: 1.4160191}
   m_EdgeRadius: 0
 --- !u!50 &1578209544
 Rigidbody2D:
@@ -1463,7 +1463,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48cd8048939cc274dae16a9493829244, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1483,7 +1483,7 @@ Transform:
   m_GameObject: {fileID: 1578209542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.55, y: -2.01, z: 0}
+  m_LocalPosition: {x: -19.55, y: -1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1509,6 +1509,8 @@ MonoBehaviour:
   maxHealth: 20
   currentHealth: 0
   healthBarScript: {fileID: 662328020}
+  flippedLeft: 0
+  facingRight: 0
 --- !u!114 &1578209548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,7 +1523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d4fd705c1b84505a38ddcce69941bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 446541202436538841, guid: ed7f242b67b454f41bdfd80baa5df88f, type: 3}
+  projectilePrefab: {fileID: 9175836690560840722, guid: ed7f242b67b454f41bdfd80baa5df88f, type: 3}
   launchPoint: {fileID: 716789669}
   shootTime: 0.5
   shootCount: 0

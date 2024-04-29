@@ -17,14 +17,14 @@ public class Projectile : MonoBehaviour
 
     //flipping launch direction
     public PlayerController playerControllerScript;
-    public bool facingRight; 
+    public bool facingLeft; 
 
     // Start is called before the first frame update
     void Start()
     {
         playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>(); 
         projectileCount = projectileLife; //set projectileCount equal to projectile Life
-        facingRight = playerControllerScript.facingRight;
+        facingLeft = playerControllerScript.facingLeft;
         //if (!facingRight)
         //{
         //    //transform.Rotate(0, -180, 0);
@@ -51,16 +51,17 @@ public class Projectile : MonoBehaviour
     //VS: Moving w/ transform -> Update()
 
     {
-        if (facingRight)//if facingRight = true...
+        if (facingLeft)//if facingLeft = true...
+                //NOTE: with the variable change, we have to pay attention to our directions! Reverse the +/- speeds! 
         {
-            //shoot projectile right
-            projectileRb.velocity = new Vector3(speed, projectileRb.velocity.y, 0);
+            //shoot projectile left
+            projectileRb.velocity = new Vector3(-speed, projectileRb.velocity.y, 0);
             //projectile will move along x,y,z Vector 3
         }
-        else //otherwise...
+        else //otherwise... (we're facing right)
         {
-            //shoot projectile left (NOTICE THE -speed!!!) 
-            projectileRb.velocity = new Vector3(-speed, projectileRb.velocity.y, 0);
+            //shoot projectile right (NOTICE THE speed is postive here!!!) 
+            projectileRb.velocity = new Vector3(speed, projectileRb.velocity.y, 0);
 
         }
     }

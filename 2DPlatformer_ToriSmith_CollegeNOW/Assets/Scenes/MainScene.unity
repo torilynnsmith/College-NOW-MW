@@ -1465,7 +1465,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48cd8048939cc274dae16a9493829244, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBarScript: {fileID: 662328020}
   flippedLeft: 0
-  facingRight: 0
+  facingLeft: 0
 --- !u!114 &1578209548
 MonoBehaviour:
   m_ObjectHideFlags: 0

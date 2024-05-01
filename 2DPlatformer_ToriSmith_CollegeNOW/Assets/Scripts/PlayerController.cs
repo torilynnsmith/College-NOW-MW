@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
                                                                                    //Similar to launching our Pong Ball! We're just declaring the new Vector 3 in the same line.
                                                                                    //This Vector 3 keeps the same velocity.x (to keep moving in whatever x direction), but changes the y to jumpForce, and doesn't change the z at all. 
             isJumping = true; //set isJumping to true
-        }
+        } 
     }
 
     //check collisions
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         healthBarScript.SetHealth(currentHealth); // set the SetHealth(int) to the currentHealth value from this script
     }
 
-    void Flip (bool facingRight)
+    void Flip (bool facingLeft)
     {
         //Debug.Log("Flip() called. facingRight = " + facingRight);
         if (facingLeft && !flippedLeft) //if player is facing Left but flipped Right (NOT flipped Left)...
